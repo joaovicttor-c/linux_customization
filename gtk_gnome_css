@@ -1,0 +1,62 @@
+cat .config/gtk-3.0/gtk.css 
+window.ssd headerbar.titlebar {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    min-height: 0;
+}
+window.ssd headerbar.titlebar button.titlebutton {
+    padding: 1px;
+    min-height: 0;
+    min-width: 0;
+}
+headerbar {
+  border-radius: 5px 5px 0 0;
+}
+headerbar .title{
+  border-radius: 5px 5px 0 0;
+}
+.csd .titlebar {
+ border-radius: 5px 5px 0 0;
+box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+border:solid 1px rgba(0, 0, 0, 0.3);
+}
+.window-frame {
+ border-radius: 5px 5px 0 0;
+}
+decoration, window, window.background, window.titlebar {
+border-radius: 5px 5px 0 0;
+}
+.window-frame {
+    border-radius: 5px 5px 0 0;
+}
+
+--------------------------------------------
+cat .config/gtk-4.0/gtk.css 
+window {
+border-radius:5px;
+box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+	border: solid 1px rgba(0, 0, 0, 0.3);
+} 
+.nautilus-window .navigation-sidebar > .sidebar-row:nth-child(2)
+ {
+  min-height:0;
+  font-size: 0;
+  -gtk-icon-size: 0;
+  margin-top: -2px;
+}
+.nautilus-window .sidebar-pane .top-bar{
+  min-height:0;
+max-height:0;
+overflow:hidden;
+  font-size: 0;
+  -gtk-icon-size: 0;
+  margin-top: -12px;
+}
+.nautilus-window .sidebar-pane .top-bar *{
+  min-height:0;
+max-height:0;
+overflow:hidden;
+  font-size: 0;
+  -gtk-icon-size: 0;
+  margin-top: -2px;
+}
